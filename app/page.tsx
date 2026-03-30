@@ -15,7 +15,7 @@ export default function Home() {
       </svg>
 
       <div className="relative" style={{ height: "100vh" }}>
-        
+        {/* background */}
         <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/John_William_Waterhouse_-_La_Belle_Dame_sans_Merci_%281893%29.jpg/960px-John_William_Waterhouse_-_La_Belle_Dame_sans_Merci_%281893%29.jpg')]
           bg-right scale-102"
           style={{ filter: "blur(4px)" }}
@@ -32,7 +32,11 @@ export default function Home() {
         </div>
 
         <div className="w-2/3 flex items-center justify-center">
-          <h6 style={{ fontSize: '2rem', color: '#fffa67' }}>welcome to my portfolio</h6>
+          <div className="col flex">
+            <h1 style={{ fontSize: '2rem', color: '#ffffff' }}>welcome to my portfolio</h1>
+          </div>
+          <div className="col"><img src={"https://i.imgur.com/Ttt6FUJ.png"} style={{width: '200px'}}></img></div>
+
         </div>
 
       </div>

@@ -10,7 +10,7 @@ const art = () => {
       <div style={{ display: "flex", flexDirection: "column", 
         alignItems: "center", padding: "2rem" }}>
 
-        <h1 style={{ color: '#fffa67', marginBottom: "0.5rem" }}>my art</h1>
+        <h1 style={{ color: '#cfc2a7', marginBottom: "0.5rem" }}>my art</h1>
         <p style={{ color: 'gray', fontFamily: "Garamond", marginBottom: "2rem" }}>
           here's a page dedicated to some of my illustrations.
         </p>
@@ -20,12 +20,12 @@ const art = () => {
           gap: "1rem", alignItems: "center" }}>
             
           <img
-            src="https://images2.imgbox.com/cb/fd/sHiT8oUN_o.png"
+            src="https://f2.toyhou.se/file/f2-toyhou-se/images/110676216_qVtNxXFbcxTTA5p.png"
             style={{ width: "100%", height: "auto" }}
           />
 
           <img
-            src='https://images2.imgbox.com/08/97/ysYw4ULj_o.png'
+            src='https://f2.toyhou.se/file/f2-toyhou-se/images/117440560_BAVYzmNMVPu77zj.jpg'
             style={{ width: "100%", height: "auto" }}
           />
           

@@ -16,11 +16,11 @@ export default function Header() {
     const [hoveredHome, setHoveredHome] = useState(false);
     return(
         <div className="flex flex-col gap-4 justify-top items-center"
-        style={{backgroundColor: "black", height: "10vh", 
+        style={{backgroundColor: "#cfc2a7", height: "10vh", 
         display: "flex", flexDirection: "column", 
         justifyContent: "center", 
-        alignItems: "center", width: "100vw", 
-        fontSize: "1.3rem", color: "white", 
+        alignItems: "center", width: "100%", 
+        fontSize: "1.3rem", color: "#523620", 
         fontFamily: "BlackTakora"}}>
         <div id="navBar">
             <Link href="/">

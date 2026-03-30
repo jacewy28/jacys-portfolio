@@ -2,39 +2,36 @@
 import React, { useState } from 'react';
 import "./styles.css";
 
+const links = [
+  { href: "/projects", label: "projects" },
+  { href: "/art", label: "art" },
+  { href: "/about", label: "about" },
+];
+
 export default function homePage() {
-  const [hoveredProjects, setHoveredProjects] = useState(false);
-  const [hoveredart, setHoveredart] = useState(false);
-  const [hoveredAbout, setHoveredAbout] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
     <div
-      className="flex flex-col gap-4"
+      className="flex flex-col gap-4 bg-cover bg-center bg-[url(https://i.pinimg.com/736x/3f/f4/f3/3ff4f3096677c8babe8bf7086076c967.jpg)]"
       style={{
-        backgroundColor: "black", height: "100vh",
-        display: "flex", flexDirection: "column", justifyContent: "center",
-        alignItems: "center", width: "100%", fontSize: "1.3rem",
-        color: "white", fontFamily: "BlackTakora"
+        height: "100vh", display: "flex", flexDirection: "column",
+        justifyContent: "center", alignItems: "center", width: "100%",
+        fontSize: "1.3rem", color: "#523620", fontFamily: "BlackTakora"
       }}>
       <h1 className="text-6xl">JACY FU</h1>
 
-      <a href="/projects" className="p-5 mt-4 inline-block"
-        onMouseEnter={() => setHoveredProjects(true)}
-        onMouseLeave={() => setHoveredProjects(false)}>
-        projects {hoveredProjects ? "★" : ""}
-      </a>
-
-      <a href="/art" className="p-5 mt-4 inline-block"
-        onMouseEnter={() => setHoveredart(true)}
-        onMouseLeave={() => setHoveredart(false)}>
-        art {hoveredart ? "★" : ""}
-      </a>
-
-      <a href="/about" className="p-5 mt-4 inline-block "
-        onMouseEnter={() => setHoveredAbout(true)}
-        onMouseLeave={() => setHoveredAbout(false)}>
-        about {hoveredAbout ? "★" : ""}
-      </a>
+      {links.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          className="p-5 mt-4 inline-block"
+          onMouseEnter={() => setHoveredLink(link.href)}
+          onMouseLeave={() => setHoveredLink(null)}
+        >
+          {link.label} {hoveredLink === link.href ? "★" : ""}
+        </a>
+      ))}
 
     </div>
   );
