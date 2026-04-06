@@ -24,20 +24,26 @@ export default function Header() {
         fontFamily: "BlackTakora"}}>
         <div id="navBar">
             <Link href="/">
-                <button className="p-5"
+                <button className="p-5 transition-transform duration-300 ease-out 
+        hover:scale-110 hover:-translate-y-2 hover:shadow-3xl 
+        group-hover:rotate-2"
                 onMouseEnter={() => setHoveredHome(true)}
                 onMouseLeave={() => setHoveredHome(false)}>
                 home {hoveredHome ? "⚔" : ""}</button>
             </Link>
             <Link href="/projects">
-                <button className="p-5"
+                <button className="p-5 transition-transform duration-300 ease-out 
+        hover:scale-110 hover:-translate-y-2 hover:shadow-3xl 
+        group-hover:rotate-2"
                 onMouseEnter={() => setHoveredProjects(true)}
                 onMouseLeave={() => setHoveredProjects(false)}>
                 projects {hoveredProjects ? "⚔" : ""}</button>
             </Link>
             <Link href="/art
             ">
-                <button className="p-5"
+                <button className="p-5 transition-transform duration-300 ease-out 
+        hover:scale-110 hover:-translate-y-2 hover:shadow-3xl 
+        group-hover:rotate-2"
                 onMouseEnter={() => setHoveredart
                     (true)}
                 onMouseLeave={() => setHoveredart
@@ -46,7 +52,9 @@ export default function Header() {
                  ? "⚔" : ""}</button>
             </Link>
             <Link href="/about">
-                <button className="p-5"
+                <button className="p-5 transition-transform duration-300 ease-out 
+        hover:scale-110 hover:-translate-y-2 hover:shadow-3xl 
+        group-hover:rotate-2"
                 onMouseEnter={() => setHoveredAbout(true)}
                 onMouseLeave={() => setHoveredAbout(false)}>about{hoveredAbout ? "⚔" : ""}</button>
             </Link>

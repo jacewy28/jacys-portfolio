@@ -26,8 +26,7 @@ const about = () => {
             <p style={{color: "#523620", fontFamily: "Garamond", fontSize: "1.1rem"}}>
             hello! i'm jacy, a freshman at uic. <br></br>
             i'm currently studying data science, with a <br></br>
-            concentration in computer science. i have a love for <br></br>
-            the medieval, the pre-raphaelite, and everything art.   
+            concentration in bioinformatics.   
             </p>
 
           </div>
@@ -77,9 +76,17 @@ const about = () => {
 
               <h1 style={{color: '#311e10',fontFamily: "Garamond"}}>CONTACT ME:</h1>
 
-              <p style={{color: '#523620',fontFamily: "Garamond", fontSize: "1.1rem"}}>
-                
-              </p>
+              <a href="linkedin.com/in/jacy-fu-1a6975334/"><p 
+              className = "transition hover:scale-120"
+              style={{color: '#523620',fontFamily: "Garamond", fontSize: "1.1rem"}}>
+              Linked-In
+              </p></a>
+
+              <a href="mailto:jfu38@uic.edu"><p 
+              className = "transition hover:scale-120"
+              style={{color: '#523620',fontFamily: "Garamond", fontSize: "1.1rem"}}>
+              Email Me
+              </p></a>
 
             </div>
           

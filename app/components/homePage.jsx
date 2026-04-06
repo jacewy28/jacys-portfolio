@@ -25,7 +25,9 @@ export default function homePage() {
         <a
           key={link.href}
           href={link.href}
-          className="p-5 mt-4 inline-block"
+          className="p-5 mt-4 inline-block transition-transform duration-300 ease-out 
+        hover:scale-110 hover:-translate-y-2 hover:shadow-3xl 
+        group-hover:rotate-2"
           onMouseEnter={() => setHoveredLink(link.href)}
           onMouseLeave={() => setHoveredLink(null)}
         >
