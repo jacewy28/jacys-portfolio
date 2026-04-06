@@ -16,7 +16,7 @@ const projects = () => {
         />
 
         <ProjectCard
-          src="/Recording 2024-11-16 180649.mp4"
+          src="/updatedVideo.mp4"
           title="Battle Game"
           description="A simple turn-based battle game in Java where you'd select a class and battle various enemies."
         />
