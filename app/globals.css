@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Forgore';
+  src: url('/fonts/Forgore.woff') format('woff'),
+       url('/fonts/Forgore.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #70473c;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -12,15 +20,30 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    
+    --background: #3f3632;
+    --foreground: #232019;
   }
 }
 
 body {
   background: var(--background);
+  height: 100vh;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;           
+  inset: 0;                
+  background-image: url("https://i.pinimg.com/736x/fe/94/8a/fe948ac0dc14fc7a1d88b18f0332ee82.jpg");
+  background-size: auto;
+  filter: blur(4px);
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 30%;
+  z-index: -1;       
 }
