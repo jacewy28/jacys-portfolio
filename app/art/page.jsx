@@ -20,22 +20,17 @@ const art = () => {
           gap: "1rem", alignItems: "center" }}>
             
           <img
-            src="https://f2.toyhou.se/file/f2-toyhou-se/images/110676216_qVtNxXFbcxTTA5p.png"
+            src="https://images2.imgbox.com/61/11/Ns3xF2pv_o.png"
             style={{ width: "100%", height: "auto" }}
           />
 
           <img
-            src='https://f2.toyhou.se/file/f2-toyhou-se/images/117440560_BAVYzmNMVPu77zj.jpg'
+            src='https://f2.toyhou.se/file/f2-toyhou-se/images/110676216_qVtNxXFbcxTTA5p.png'
             style={{ width: "100%", height: "auto" }}
           />
           
 
         </div>
-
-        <p style={{ color: "gray", fontFamily: "Garamond", 
-          fontSize: "1.1rem", marginTop: "2rem" }}>
-          places to find me:
-        </p>
 
       </div>
     </div>

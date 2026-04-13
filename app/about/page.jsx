@@ -17,7 +17,7 @@ const about = () => {
           display: "flex", flexDirection: "row", 
           justifyContent: "center", alignItems: "center", 
           width: "50vw", fontSize: "1.3rem", 
-          color: "#523620", margin: "0 auto", gap: "3rem"}}>
+          color: "#523620", margin: "0 auto", gap: "3rem",  borderRadius: "5%"}}>
           {/* margin auto centers the div */}
           
           <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
@@ -30,14 +30,15 @@ const about = () => {
             </p>
 
           </div>
-          <img src='/profile.jpg'
+          <img className="rounded-md max shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400" 
+          src='/profile.jpg'
           style={{width: "20%", height: "60%", objectFit: "cover", objectPosition: "center"}}></img>
           </div>
           
           <div className="flex-col gap-4 justify-center items-center"
           style={{backgroundColor: "#cfc2a7", border: "1px solid black", 
           display: "flex", flexDirection: "row", alignItems: "center", 
-          width: "50vw", fontSize: "1.3rem", margin: "0 auto", padding:"2rem"}}> 
+          width: "50vw", fontSize: "1.3rem", margin: "0 auto", padding:"2rem", borderRadius: "5%"}}> 
           
             <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
 
@@ -70,7 +71,7 @@ const about = () => {
           <div className="flex-col gap-4 justify-center items-center"
           style={{backgroundColor: "#cfc2a7", border: "1px solid black", 
           display: "flex", flexDirection: "row", alignItems: "center", 
-          width: "50vw", fontSize: "1.3rem", margin: "1rem", padding:"2rem"}}> 
+          width: "50vw", fontSize: "1.3rem", margin: "1rem", padding:"2rem", borderRadius: "5%"}}> 
           
             <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
 
