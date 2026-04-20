@@ -20,7 +20,7 @@ const art = () => {
           gap: "1rem", alignItems: "center" }}>
             
           <img
-            src="https://images2.imgbox.com/61/11/Ns3xF2pv_o.png"
+            src="/portfolio1.png"
             style={{ width: "100%", height: "auto" }}
           />
 
